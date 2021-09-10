@@ -18,6 +18,19 @@ The desire to find an occupation where there is always something new and interes
 * JavaScript Basics
 * Git
 
+## Code Example
+
+```
+function likes(names) {
+    let [first, second, third] = names;
+  
+    return names.length == 0? `no one likes this` :
+           names.length == 1? `${first} likes this` :
+           names.length == 2? `${first} and ${second} like this` :
+           names.length == 3? `${first}, ${second} and ${third} like this`: 
+			      `${first}, ${second} and ${names.length-2} others like this`;
+```
+
 ## Education & Courses 
 
 * ITVDN «HTML5 И CSS3 Starter"  
