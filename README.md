@@ -1,1 +1,0 @@
-https://dariija.github.io/rsschool-cv/cv
