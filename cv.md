@@ -8,6 +8,10 @@
 **GitHub**: [dariija](https://github.com/dariija)  
 **Telegram**: @darjab  
 
+## About Me
+
+The desire to find an occupation where there is always something new and interesting to learn led me to the web development. I like the freedom and unlimited possibilities of implementation that programming gives to achieve the result. My goal is to gain knowledge in Front-end development,  grow and improve in this direction.  
+
 ## Skills
 
 * HTML5, CSS3
