@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="style/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
     <title>Daria Bakanova CV</title>
 
 </head>
@@ -20,6 +24,8 @@
                     <a class="nav__link" href="#education">Education & Courses</a>
                     <a class="nav__link" href="#lang">Languages</a>
                     <a class="nav__link" href="#code_ex">Code Example</a>
+                    <a class="nav__link" href="#projects">Projects</a>
+                    <a class="nav__link" href="#video">Video</a>
                 </div>
 
                 <button class="burger" type="button">
@@ -65,12 +71,12 @@
             <div class="container main__container">
 
                 <section class="section main__section">
-                    <h3 class="section__title" id="about">About Me</h3>
+                    <h3 class="section__title" id="about"><span class="section__title-decor">About Me</span></h3>
                     <p class="section__text">The desire to find an occupation where there is always something new and interesting to learn led me to the web development. I like the freedom and unlimited possibilities of implementation that programming gives to achieve the result. My goal is to gain knowledge in Front-end development, grow and improve in this direction.</p>
                 </section>
 
                 <section class="section main__section">
-                    <h3 class="section__title" id="skills">Skills</h3>
+                    <h3 class="section__title" id="skills"><span class="section__title-decor">Skills</span></h3>
                     <ul class="section__list list">
                         <li class="list__item">HTML5, CSS3</li>
                         <li class="list__item">JavaScript Basics</li>
@@ -79,18 +85,18 @@
                 </section>
         
                 <section class="section main__section">
-                    <h3 class="section__title" id="education">Education & Courses</h3>
+                    <h3 class="section__title" id="education"><span class="section__title-decor section__title--smaller">Education & Courses</span></h3>
                     <ul class="section__list list">
-                        <li class="list__item">ITVDN «HTML5 И CSS3 Starter»</li>
-                        <li class="list__item">ITVDN «JavaScript Essential»</li>
-                        <li class="list__item">Dmitry Valak «Basics of website creation. HTML & CSS for Beginners»</li>
-                        <li class="list__item">JavaScript ( https://learn.javascript.ru/ & You Don’t Know JS Book Series) (in progress…)</li>
-                        <li class="list__item">RS Schools Course «JavaScript/Front-end. Stage 1» (in progress…)</li>
+                        <li class="list__item">ITVDN "HTML5 & CSS3 Starter"</li>
+                        <li class="list__item">ITVDN "JavaScript Essential"</li>
+                        <li class="list__item">Dmitry Valak "Basics of website creation. HTML & CSS for Beginners"</li>
+                        <li class="list__item">JavaScript ( https://learn.javascript.ru & You Don’t Know JS Book Series) (in progress...)</li>
+                        <li class="list__item">RS Schools Course "JavaScript/Front-end. Stage 1" (in progress...)</li>
                     </ul>
                 </section>
         
                 <section class="section main__section">
-                    <h3 class="section__title" id="lang">Languages</h3>
+                    <h3 class="section__title" id="lang"><span class="section__title-decor">Languages</span></h3>
                     <ul class="section__list list">
                         <li class="list__item">Russian - native speaker</li>
                         <li class="list__item">English - A2</li>
@@ -98,7 +104,7 @@
                 </section>
 
                 <section class="section main__section code">
-                    <h3 class="section__title" id="code_ex">Code Example</h3>
+                    <h3 class="section__title" id="code_ex"><span class="section__title-decor">Code Example</span></h3>
                     <details class="section__code code__details">
                         <summary class="code__summary">From Codewars</summary>
                         <pre class="code__example">
@@ -115,9 +121,23 @@ function likes(names) {
                         </pre>
                     </details>
                 </section>
+
+                <section class="section main__section">
+                    <h3 class="section__title" id="projects""><span class="section__title-decor">Projects</span></h3>
+                    <div class="section__projects">
+                        <p>Soon...</p>
+                    </div>
+                </section>
+
+                <section class="section main__section">
+                    <h3 class="section__title" id="video"><span class="section__title-decor">Video</span></h3>
+                    <div class="section__video">
+                        <iframe class= "section__video-player" src="https://www.youtube-nocookie.com/embed/1RTiaTGuKnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </section>
             </div>
         </main>
-        
+
         <footer class="footer page__footer">
             <div class="container">
                 <div class="footer__inner">
@@ -137,7 +157,6 @@ function likes(names) {
                 </div>
             </div>
         </footer>
-
     </div>
 </body>
 </html>
