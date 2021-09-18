@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Daria Bakanova CV</title>
+
+</head>
+<body>
+    <div class="page">
+        <nav class="nav nav__page">
+            <div class="container">
+                <div class="nav__inner">
+                    <a class="nav__link" href="#about">About me</a>
+                    <a class="nav__link" href="#skills">Skills</a>
+                    <a class="nav__link" href="#education">Education & Courses</a>
+                    <a class="nav__link" href="#lang">Languages</a>
+                    <a class="nav__link" href="#code_ex">Code Example</a>
+                </div>
+
+                <button class="burger" type="button">
+                    <img class="burger__icon" src="images/icons/icon_menu.svg" alt="menu">
+                </button>
+            </div>
+        </nav>
+
+        <header class="header page__header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__photo">
+                        <figure class="header__figure">
+                            <img class="header__img" src="images/photo_daria_bakanova.jpg" alt="photo">
+                        </figure>
+                    </div>
+
+                    <div class="header__content">
+                        <h1 class="header__title">Daria Bakanova</h1>
+
+                        <div class="header__contacts contacts">
+                            <ul class="contacts__list">
+                                <li class="contacts__item">
+                                    <img class="contacts__icon" src="images/icons/git-icon.svg" alt="github-icon">
+                                    <a class="contacts__link" href="https://github.com/dariija" target="_blank">dariija</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <img class="contacts__icon" src="images/icons/phone-icon.svg" alt="tel-icon">
+                                    <a class="contacts__link" href="tel:+79214138459" target="_blank"> +7 (921) 413-84-59</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <img class="contacts__icon" src="images/icons/mail-icon.svg" alt="mail-icon">
+                                    <a class="contacts__link" href="mailto:darija.bakanova@gmail.com" target="_blank"> darija.bakanova@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main page__main">
+            <div class="container main__container">
+
+                <section class="section main__section">
+                    <h3 class="section__title" id="about">About Me</h3>
+                    <p class="section__text">The desire to find an occupation where there is always something new and interesting to learn led me to the web development. I like the freedom and unlimited possibilities of implementation that programming gives to achieve the result. My goal is to gain knowledge in Front-end development, grow and improve in this direction.</p>
+                </section>
+
+                <section class="section main__section">
+                    <h3 class="section__title" id="skills">Skills</h3>
+                    <ul class="section__list list">
+                        <li class="list__item">HTML5, CSS3</li>
+                        <li class="list__item">JavaScript Basics</li>
+                        <li class="list__item">Git</li>
+                    </ul>
+                </section>
+        
+                <section class="section main__section">
+                    <h3 class="section__title" id="education">Education & Courses</h3>
+                    <ul class="section__list list">
+                        <li class="list__item">ITVDN «HTML5 И CSS3 Starter»</li>
+                        <li class="list__item">ITVDN «JavaScript Essential»</li>
+                        <li class="list__item">Dmitry Valak «Basics of website creation. HTML & CSS for Beginners»</li>
+                        <li class="list__item">JavaScript ( https://learn.javascript.ru/ & You Don’t Know JS Book Series) (in progress…)</li>
+                        <li class="list__item">RS Schools Course «JavaScript/Front-end. Stage 1» (in progress…)</li>
+                    </ul>
+                </section>
+        
+                <section class="section main__section">
+                    <h3 class="section__title" id="lang">Languages</h3>
+                    <ul class="section__list list">
+                        <li class="list__item">Russian - native speaker</li>
+                        <li class="list__item">English - A2</li>
+                    </ul>
+                </section>
+
+                <section class="section main__section code">
+                    <h3 class="section__title" id="code_ex">Code Example</h3>
+                    <details class="section__code code__details">
+                        <summary class="code__summary">From Codewars</summary>
+                        <pre class="code__example">
+<code>
+function likes(names) {
+    let [first, second, third] = names;
+                                                                    
+    return names.length == 0? `no one likes this` :
+           names.length == 1? `${first} likes this` :
+           names.length == 2? `${first} and ${second} like this` :
+           names.length == 3? `${first}, ${second} and ${third} like this`: 
+                              `${first}, ${second} and ${names.length-2} others like this`;
+                                                               </code>
+                        </pre>
+                    </details>
+                </section>
+            </div>
+        </main>
+        
+        <footer class="footer page__footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__item">
+                        <a class="footer__link" href="https://github.com/dariija" target="_blank">
+                            <img class="footer__github" src="images/icons/git-icon.svg"  alt="github-icon">
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <span class="footer__year">2021</span>
+                    </div>
+                    <div class="footer__item">
+                        <a class="footer__link" href="https://rs.school/js/" target="_blank">
+                            <img class="footer__rsschool" src="images/icons/rsschool-icon.svg" alt="rsschool-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
