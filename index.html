@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="libs/highlight/dark.min.css">
+    <script src="libs/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
     <title>Daria Bakanova CV</title>
 
 </head>
@@ -105,20 +109,17 @@
 
                 <section class="section main__section code">
                     <h3 class="section__title" id="code_ex"><span class="section__title-decor">Code Example</span></h3>
-                    <details class="section__code code__details">
+                    <details class="section__code code__details" open>
                         <summary class="code__summary">From Codewars</summary>
                         <pre class="code__example">
-<code>
-function likes(names) {
+<code>function likes(names) {
     let [first, second, third] = names;
                                                                     
     return names.length == 0? `no one likes this` :
            names.length == 1? `${first} likes this` :
            names.length == 2? `${first} and ${second} like this` :
            names.length == 3? `${first}, ${second} and ${third} like this`: 
-                              `${first}, ${second} and ${names.length-2} others like this`;
-                                                               </code>
-                        </pre>
+                              `${first}, ${second} and ${names.length-2} others like this`;</code></pre>
                     </details>
                 </section>
 

@@ -292,23 +292,28 @@ ul,ol {
 .code__details {
     padding: 5px 10px;
 
-    background-color: rgb(163 182 191);
+    background-color: rgb(212 206 194);
     border: 1px solid rgb(111 106 106);
     border-radius: 7px;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+    cursor: pointer;
 }
 
 .code__details[open] {
     padding: 5px 10px;
-    
-    background-color: rgb(163 182 191);
+
+    background-color: rgb(68 68 68);;
 }
 
 .code__details[open] .code__summary {
     border-bottom: 1px solid  rgb(111 106 106);
+
+    color: #dab0a3;
 }
 
 .code__summary::marker {
-    color: #484848;
+    color: #696359;
 }
 
 .code__example {
@@ -317,6 +322,8 @@ ul,ol {
 
     white-space: pre-wrap;
     word-break: break-all;
+
+    cursor: default;
 } 
 
 .code__code {
