@@ -171,7 +171,7 @@ ul,ol {
     margin-bottom: 10px;
 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 6vw;
+    font-size: 120px;
     
     font-weight: bold;
     text-transform: uppercase;    
@@ -315,10 +315,57 @@ ul,ol {
 } 
 
 .code__code {
-    display:block;
     width: 100%;
+    display:block;
 }
 
+.section__projects {
+    margin: 0 -15px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projects__article {
+    width: 33.333%;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.projects__item {
+    min-height: 420px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fdfcf9;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.projects__title {
+    margin-bottom: 10px;
+
+    font-size: 24px;
+    color: #422320;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.projects__gif {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+
+    border-radius: 7px 7px 0 0;
+}
+
+.projects__info {
+    padding: 20px;
+}
 
 /* --------------- Footer ---------------*/
 
@@ -351,9 +398,14 @@ ul,ol {
 }
 
 
-
 /* --------------- Media Queries ---------------*/
 
+@media (max-width: 1920px) {
+
+    .header__title {
+        font-size: 6vw;
+    }
+}
 
 @media (max-width: 1400px) {
 
@@ -402,6 +454,14 @@ ul,ol {
 
     .main__container {
         max-width: 850px;
+    }
+
+    .section__projects {
+        justify-content: center;
+    }
+
+    .projects__article {
+        width: 50%;
     }
 }
 
@@ -489,9 +549,8 @@ ul,ol {
         width: 26px;
     }
 
-    .section__title {
-        padding-top: 45px;
-        font-size: 24px;
+    .projects__title{
+        font-size: 20px;
     }
 
     .section__title-decor::before {
@@ -513,6 +572,24 @@ ul,ol {
     .footer__rsschool {
         width: 50px;
     }
+
+    .section__projects {
+        flex-direction: column;
+    }
+
+    .projects__article {
+        width: 100%;
+    }
+
+    .section__title {
+        padding-top: 45px;
+        font-size: 24px;
+    }
+
+    .projects__item {
+        min-height: 360px;
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -541,6 +618,10 @@ ul,ol {
 
     .header__title {
         font-size: 24px;
+    }
+
+    .projects__item {
+        min-height: 315px;
     }
 }
 
@@ -672,7 +753,12 @@ ul,ol {
     }
 
     .header__photo {
+        width: 30%;
         margin-top: 25px;
+    }
+
+    .projects__item {
+        min-height: 360px;
     }
 }
 
