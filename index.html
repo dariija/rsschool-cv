@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="libs/highlight/dark.min.css">
+    <script src="libs/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
     <title>Daria Bakanova CV</title>
 
 </head>
@@ -105,27 +109,63 @@
 
                 <section class="section main__section code">
                     <h3 class="section__title" id="code_ex"><span class="section__title-decor">Code Example</span></h3>
-                    <details class="section__code code__details">
+                    <details class="section__code code__details" open>
                         <summary class="code__summary">From Codewars</summary>
                         <pre class="code__example">
-<code>
-function likes(names) {
+<code>function likes(names) {
     let [first, second, third] = names;
                                                                     
     return names.length == 0? `no one likes this` :
            names.length == 1? `${first} likes this` :
            names.length == 2? `${first} and ${second} like this` :
            names.length == 3? `${first}, ${second} and ${third} like this`: 
-                              `${first}, ${second} and ${names.length-2} others like this`;
-                                                               </code>
-                        </pre>
+                              `${first}, ${second} and ${names.length-2} others like this`;</code></pre>
                     </details>
                 </section>
 
                 <section class="section main__section">
                     <h3 class="section__title" id="projects"><span class="section__title-decor">Projects</span></h3>
-                    <div class="section__projects">
-                        <p>Soon...</p>
+                    <div class="section__projects projects">
+
+                        <article class="projects__article">
+                            <div class="projects__item">
+                                <a href="https://codepen.io/dariija/pen/NWgYZgP" target="_blank">
+                                    <img class="projects__gif" src="images/form_sample.png" alt="project1">
+                                </a>
+                                <div class="projects__info">
+                                    <h4 class="projects__title">Form</h4>
+                                    <p class="projects__text">Feedback form example</p>
+                                    <ul class="section__list list">
+                                        <li class="list__item">HTML</li>
+                                        <li class="list__item">CSS</li>
+                                    </ul>                
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__article">
+                            <div class="projects__item">
+                                <a href="https://github.com/dariija" target="_blank">
+                                    <img class="projects__gif" src="images/gif/cat1.gif" alt="project1">
+                                </a>
+                                <div class="projects__info">
+                                    <h4 class="projects__title">Project #2</h4>
+                                    <p class="projects__text">Someday there will be something here...</p>
+                                </div>
+                            </div>
+                         </article>
+
+                         <article class="projects__article">
+                            <div class="projects__item">
+                                <a href="https://github.com/dariija" target="_blank">
+                                    <img class="projects__gif" src="images/gif/cat2.gif" alt="project1">
+                                </a>
+                                <div class="projects__info">
+                                    <h4 class="projects__title">Project #3</h4>
+                                    <p class="projects__text">Someday there will be something here...</p>
+                                </div>
+                            </div>
+                         </article>
                     </div>
                 </section>
 
@@ -158,5 +198,7 @@ function likes(names) {
             </div>
         </footer>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
